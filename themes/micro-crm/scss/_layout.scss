@@ -1,0 +1,110 @@
+// Header
+header{
+  background: $dark-color;
+  height: 45px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+  padding: 1rem 0;
+  font-size: small;
+
+  #main-nav{
+    display: flex;
+    justify-content: space-between;
+  
+    ul{
+      display: flex;
+    }
+  
+    li{
+      padding: 1rem 1rem;
+    }
+  
+    a{
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      // padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
+  
+      &:hover{
+        border-color: $medium-color;
+      }
+  
+      &.current{
+        border-color: $main-color;
+      }
+    }
+    
+    .logo{
+      width: 90px;
+      height: 45px;
+    }
+
+    form input{
+      background: $light-color none repeat scroll 0 0;
+      border: 0 none;
+      color: #7f7d7d;
+      float: left;
+      font-size: 12px;
+      padding: 5px;
+      text-align: left;
+      width: auto;
+      margin: 0;
+      margin-top: 1rem;
+      margin-left: 10px;
+    }
+
+    .myCart .fa{
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover{
+        background: $main-color;
+      }
+    }
+
+    
+  button{
+    height: 100%;
+  }
+  }
+
+  button{
+    border: 1px solid #fff;
+  }
+}
+
+// Footer
+#main-footer{
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fa{
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+
+      &:hover{
+        background: $main-color;
+      }
+    }
+  }
+}

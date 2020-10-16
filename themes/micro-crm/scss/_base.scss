@@ -1,0 +1,183 @@
+@import 'variables';
+
+// CSS resets
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // font-family: Doris, sans-serif;
+  font-family: $fonts;
+  line-height: 1.6;
+  background: $light-color;
+}
+
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul{
+  list-style: none;
+}
+
+.is{
+  &-active{
+    color: $dark-color;
+    background-color: $light-color;
+  }
+
+  &-error{
+    color: #333;
+    background-color: #FF0000;
+  }
+
+  &-warning{
+    color: #f4f4f4;
+    background-color: $main-color;
+  }
+}
+
+.is{
+  &-active:hover {
+    background-color: $main-color;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+// Logo
+#logo{
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+// Buttons
+%btn-shared{
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all o.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn{
+  &-main{
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+
+  &-light{
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+
+  &-dark{
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+
+  &-danger{
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $red-color;
+  }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: $main-color;
+}
+
+// Background
+.bg{
+  &-main{
+    background: $main-color;
+    color: set-text-color($main-color);
+  }
+
+  &-dark{
+    background: $dark-color;
+    color: set-text-color($dark-color);
+  }
+
+  &-light{
+    background: $light-color;
+    color: set-text-color($light-color);
+  }
+
+  &-medium{
+    background: $medium-color;
+    color: set-text-color($medium-color);
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+// Padding
+.p{
+  &-1{padding: 1rem;}
+  &-2{padding: 2rem;}
+}
+
+.py{
+  &-1{padding: 1rem 0;}
+
+  &-2{padding: 2rem 0;}
+
+  &-3{padding: 3rem 0;}
+
+  &-4{padding: 4rem 0;}
+}
+
+// Margin
+.my{
+  &-1{margin: 1rem 0;}
+
+  &-2{margin: 2rem 0;}
+
+  &-3{margin: 3rem 0;}
+
+  &-4{margin: 4rem 0;}
+}
+
+.section-title{
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line{
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.hr-line{
+  height: 1px;
+  width: 100%;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}

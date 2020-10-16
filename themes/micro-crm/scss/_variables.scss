@@ -1,0 +1,28 @@
+// Variables
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$roboto: 'Roboto', sans-serif; //h1, h2
+$fonts: Doris, sans-serif;
+
+
+// Colors
+$website-width: 1080px; //1280
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #cccccc;
+$dark-color: #333333;
+$red-color: #FF0000;
+$bg-home-a: url('../../img/homepage/company.jpg');
+$bg-home-b: url('../../img/homepage/nouvelles.jpg');
+$bg-home-c: url('../../img/homepage/produits.jpg');
+$bg-home-d: url('../../img/homepage/corporation.jpg');
+
+
+// Set Text Color
+@function set-text-color($color) {
+  @if(lightness($color) > 50){
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
