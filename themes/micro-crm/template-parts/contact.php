@@ -15,8 +15,7 @@
       <br/>
       <form>
         <div class="text-fields">
-          <input type="text" class="text-input name-input" placeholder="Nom">
-          <input type="text" class="text-input subject-input" placeholder="Sujet">
+        
           <input type="text" class="text-input email-input" placeholder="Courriel">
           <input type="text" class="text-input phone-input" placeholder="Phone">
           <textarea class="text-input message-input" placeholder="Message"></textarea>
