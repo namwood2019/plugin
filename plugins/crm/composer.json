@@ -1,0 +1,16 @@
+{
+    "name": "nam_w/crm",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "namwood",
+            "email": "namwood2019@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Crm\\": "classes"
+        }
+    }
+}
